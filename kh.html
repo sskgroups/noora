@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>🚀 Ishq-e-Mustaqbil | Future Love Intelligence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700;800&family=Noto+Nastaliq+Urdu:wght@400;600&family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="kh.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- PWA Meta -->
+    <meta name="theme-color" content="#0a0a2a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- SEO -->
+    <meta name="description" content="AI-enhanced love portal with predictive emotions, persistent memory, and futuristic love intelligence">
+    <meta property="og:title" content="Ishq-e-Mustaqbil | Future Love Intelligence">
+    <meta property="og:description" content="Where love meets artificial intelligence and emotions become eternal data">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- ===== LOADING FUTURE ===== -->
+    <div id="future-loader">
+        <div class="quantum-loader">
+            <div class="quantum-ring"></div>
+            <div class="quantum-core"></div>
+            <div class="loader-text">
+                <span class="loading-line" id="loading-text">Initializing Quantum Love Engine...</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NEURAL BACKGROUND ===== -->
+    <div class="neural-background">
+        <canvas id="neural-canvas"></canvas>
+        <div class="data-stream">
+            <span>LOVE_DATA_STREAM_ACTIVE</span>
+            <span>EMOTION_ANALYSIS_RUNNING</span>
+            <span>MEMORY_CONSOLIDATION_90%</span>
+            <span>FUTURE_PREDICTION_ENGAGED</span>
+        </div>
+    </div>
+
+    <!-- ===== MAIN INTERFACE ===== -->
+    <div class="future-container" id="main-interface">
+        <!-- HOLOGRAPHIC HEADER -->
+        <header class="holographic-header">
+            <div class="hologram-effect">
+                <h1 class="holographic-title">
+                    <span class="glitch" data-text="عشقِ مستقبل">عشقِ مستقبل</span>
+                    <span class="sub-glitch">ISHQ-E-MUSTAQBIL</span>
+                </h1>
+                <div class="hologram-subtitle">
+                    <i class="fas fa-brain-circuit"></i>
+                    <span id="ai-status">Neural Love Network: ONLINE</span>
+                </div>
+            </div>
+            
+            <div class="time-capsule">
+                <div class="capsule-item">
+                    <i class="fas fa-calendar-star"></i>
+                    <div>
+                        <div class="capsule-label">Love Time</div>
+                        <div class="capsule-value" id="love-days">∞ Days</div>
+                    </div>
+                </div>
+                <div class="capsule-item">
+                    <i class="fas fa-memory"></i>
+                    <div>
+                        <div class="capsule-label">Memory Bank</div>
+                        <div class="capsule-value" id="memory-bank">1.2TB</div>
+                    </div>
+                </div>
+                <div class="capsule-item">
+                    <i class="fas fa-robot-heart"></i>
+                    <div>
+                        <div class="capsule-label">AI Intimacy</div>
+                        <div class="capsule-value" id="ai-intimacy">94%</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== QUANTUM LOCK ===== -->
+        <section class="quantum-lock-section">
+            <div class="quantum-container">
+                <div class="quantum-header">
+                    <div class="quantum-sphere">
+                        <div class="quantum-orbit"></div>
+                        <div class="quantum-core">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                    <h2>Quantum Emotion Lock</h2>
+                    <p class="quantum-desc">Today's emotional frequency requires precise calibration</p>
+                </div>
+                
+                <div class="emotion-input">
+                    <div class="input-hologram">
+                        <div class="hologram-grid"></div>
+                        <input type="text" 
+                               id="quantum-input"
+                               placeholder="Vocalize today's primary emotion..."
+                               autocomplete="off"
+                               data-emoji="🧠">
+                        <div class="input-helper">
+                            <span class="helper-text" id="helper-text">Emotion analysis in progress...</span>
+                            <span class="emoji-preview" id="emoji-preview">💭</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quantum-controls">
+                        <button class="quantum-btn unlock-btn" onclick="quantumUnlock()">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Quantum Authentication</span>
+                            <div class="pulse-dot"></div>
+                        </button>
+                        
+                        <button class="quantum-btn hint-btn" onclick="showQuantumHint()">
+                            <i class="fas fa-crystal-ball"></i>
+                            <span>Neural Hint</span>
+                        </button>
+                        
+                        <button class="quantum-btn predict-btn" onclick="predictEmotion()">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Prediction</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="quantum-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Entanglement Level</div>
+                        <div class="metric-value">
+                            <span id="entanglement">72%</span>
+                            <div class="metric-wave"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Coherence Time</div>
+                        <div class="metric-value">
+                            <span id="coherence">18h 42m</span>
+                            <div class="metric-wave" style="animation-delay: 0.5s"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Superposition States</div>
+                        <div class="metric-value">
+                            <span id="superposition">∞</span>
+                            <div class="metric-wave" style="animation-delay: 1s"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quantum-poem" id="quantum-poem">
+                    "عقل کی حدوں سے پرے محبت کی دنیا<br>جہاں ہر احساس ایک کوانٹم حالت ہے"
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== AI POETRY MATRIX ===== -->
+        <section class="poetry-matrix">
+            <div class="matrix-header">
+                <h2><i class="fas fa-network-wired"></i> Neural Poetry Matrix</h2>
+                <div class="matrix-controls">
+                    <div class="mode-selector">
+                        <button class="mode-btn active" data-mode="classical">Classical</button>
+                        <button class="mode-btn" data-mode="modern">Modern</button>
+                        <button class="mode-btn" data-mode="ai">AI-Generated</button>
+                        <button class="mode-btn" data-mode="personal">Personal</button>
+                    </div>
+                    <div class="sentiment-filter">
+                        <i class="fas fa-filter"></i>
+                        <select id="sentiment-filter">
+                            <option value="all">All Emotions</option>
+                            <option value="love">Pure Love</option>
+                            <option value="longing">Longing</option>
+                            <option value="joy">Joy</option>
+                            <option value="melancholy">Melancholy</option>
+                            <option value="hope">Hope</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="matrix-container">
+                <div class="poetry-cell" id="poetry-cell-1">
+                    <div class="cell-header">
+                        <span class="cell-label">Primary Verse</span>
+                        <span class="cell-era">Ghalib | 1797</span>
+                    </div>
+                    <div class="cell-content urdu-verse" id="verse-1">
+                        ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے
+                    </div>
+                    <div class="cell-translation" id="trans-1">
+                        Thousands of desires, each worth dying for
+                    </div>
+                    <div class="cell-actions">
+                        <button class="cell-btn" onclick="neuralAnalyze(1)">
+                            <i class="fas fa-brain"></i> Analyze
+                        </button>
+                        <button class="cell-btn" onclick="generateResponse(1)">
+                            <i class="fas fa-reply"></i> Respond
+                        </button>
+                        <button class="cell-btn" onclick="saveToMemory(1)">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="poetry-cell" id="poetry-cell-2">
+                    <div class="cell-header">
+                        <span class="cell-label">Secondary Verse</span>
+                        <span class="cell-era">Faiz | 1911</span>
+                    </div>
+                    <div class="cell-content urdu-verse" id="verse-2">
+                        مجھ سے پہلی سی محبت مری محبوب نہ مانگ
+                    </div>
+                    <div class="cell-translation" id="trans-2">
+                        Don't ask for that first love again, my beloved
+                    </div>
+                    <div class="cell-actions">
+                        <button class="cell-btn" onclick="neuralAnalyze(2)">
+                            <i class="fas fa-brain"></i> Analyze
+                        </button>
+                        <button class="cell-btn" onclick="generateResponse(2)">
+                            <i class="fas fa-reply"></i> Respond
+                        </button>
+                        <button class="cell-btn" onclick="saveToMemory(2)">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="poetry-cell" id="poetry-cell-3">
+                    <div class="cell-header">
+                        <span class="cell-label">Tertiary Verse</span>
+                        <span class="cell-era">AI | 2024</span>
+                    </div>
+                    <div class="cell-content urdu-verse" id="verse-3">
+                        محبت کی یہ کوانٹم ریاست<br>ہر پل نئی، ہر لمحہ انوکھی
+                    </div>
+                    <div class="cell-translation" id="trans-3">
+                        This quantum state of love<br>Every moment new, every instant unique
+                    </div>
+                    <div class="cell-actions">
+                        <button class="cell-btn" onclick="neuralAnalyze(3)">
+                            <i class="fas fa-brain"></i> Analyze
+                        </button>
+                        <button class="cell-btn" onclick="generateResponse(3)">
+                            <i class="fas fa-reply"></i> Respond
+                        </button>
+                        <button class="cell-btn" onclick="saveToMemory(3)">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="matrix-actions">
+                <button class="matrix-action-btn" onclick="regenerateMatrix()">
+                    <i class="fas fa-sync-alt"></i> Regenerate Matrix
+                </button>
+                <button class="matrix-action-btn" onclick="exportPoetry()">
+                    <i class="fas fa-download"></i> Export Dataset
+                </button>
+                <button class="matrix-action-btn" onclick="trainAI()">
+                    <i class="fas fa-robot"></i> Train AI Model
+                </button>
+            </div>
+            
+            <div class="ai-insights">
+                <div class="insight-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Neural Insights</span>
+                </div>
+                <div class="insight-content" id="ai-insight">
+                    Analyzing emotional patterns... Love coherence detected at 89% accuracy.
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOLOGRAM MEMORY BANK ===== -->
+        <section class="memory-bank">
+            <div class="bank-header">
+                <h2><i class="fas fa-database"></i> Holographic Memory Bank</h2>
+                <div class="bank-stats">
+                    <span class="stat"><i class="fas fa-memory"></i> <span id="total-memories">128</span> Memories</span>
+                    <span class="stat"><i class="fas fa-brain"></i> <span id="memory-density">87%</span> Density</span>
+                    <span class="stat"><i class="fas fa-bolt"></i> <span id="recall-speed">24ms</span> Recall</span>
+                </div>
+            </div>
+            
+            <div class="memory-grid" id="memory-grid">
+                <!-- Memories loaded dynamically -->
+            </div>
+            
+            <div class="memory-input">
+                <div class="input-hologram">
+                    <textarea id="new-memory-input" 
+                              placeholder="Encode new memory... (Supports text, emotions, timestamps)"
+                              rows="3"></textarea>
+                    <div class="input-tags">
+                        <span class="tag" data-tag="love">❤️ Love</span>
+                        <span class="tag" data-tag="moment">✨ Moment</span>
+                        <span class="tag" data-tag="future">🚀 Future</span>
+                        <span class="tag" data-tag="personal">🔒 Personal</span>
+                    </div>
+                </div>
+                <button class="encode-btn" onclick="encodeMemory()">
+                    <i class="fas fa-satellite-dish"></i> Encode to Memory Bank
+                </button>
+            </div>
+            
+            <div class="memory-tools">
+                <button class="tool-btn" onclick="searchMemories()">
+                    <i class="fas fa-search"></i> Neural Search
+                </button>
+                <button class="tool-btn" onclick="exportMemories()">
+                    <i class="fas fa-cloud-download-alt"></i> Cloud Backup
+                </button>
+                <button class="tool-btn" onclick="analyzePatterns()">
+                    <i class="fas fa-chart-network"></i> Pattern Analysis
+                </button>
+                <button class="tool-btn" onclick="defragmentMemory()">
+                    <i class="fas fa-compact-disc"></i> Defragment
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== FUTURE PREDICTION ENGINE ===== -->
+        <section class="prediction-engine">
+            <div class="engine-header">
+                <h2><i class="fas fa-crystal-ball"></i> Temporal Prediction Engine</h2>
+                <div class="engine-status">
+                    <span class="status-dot active"></span>
+                    <span>Forecasting next 7 love days</span>
+                </div>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- Timeline items generated dynamically -->
+                </div>
+            </div>
+            
+            <div class="prediction-cards">
+                <div class="prediction-card">
+                    <div class="prediction-date" id="pred-date-1">Tomorrow</div>
+                    <div class="prediction-content">
+                        <div class="prediction-emoji" id="pred-emoji-1">💝</div>
+                        <div class="prediction-text" id="pred-text-1">
+                            High probability of romantic communication
+                        </div>
+                        <div class="prediction-confidence">
+                            <div class="confidence-bar" style="width: 82%"></div>
+                            <span>82% confidence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-date" id="pred-date-2">+2 Days</div>
+                    <div class="prediction-content">
+                        <div class="prediction-emoji" id="pred-emoji-2">🌟</div>
+                        <div class="prediction-text" id="pred-text-2">
+                            Potential for shared creative moment
+                        </div>
+                        <div class="prediction-confidence">
+                            <div class="confidence-bar" style="width: 76%"></div>
+                            <span>76% confidence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prediction-card">
+                    <div class="prediction-date" id="pred-date-3">+5 Days</div>
+                    <div class="prediction-content">
+                        <div class="prediction-emoji" id="pred-emoji-3">🌙</div>
+                        <div class="prediction-text" id="pred-text-3">
+                            Emotional depth increase detected
+                        </div>
+                        <div class="prediction-confidence">
+                            <div class="confidence-bar" style="width: 68%"></div>
+                            <span>68% confidence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prediction-controls">
+                <button class="prediction-btn" onclick="generatePredictions()">
+                    <i class="fas fa-bolt"></i> Generate New Predictions
+                </button>
+                <button class="prediction-btn" onclick="adjustAlgorithm()">
+                    <i class="fas fa-sliders-h"></i> Adjust Algorithm
+                </button>
+                <button class="prediction-btn" onclick="sharePrediction()">
+                    <i class="fas fa-share-alt"></i> Share Forecast
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== AI COMPANION CHAT ===== -->
+        <section class="ai-companion">
+            <div class="companion-header">
+                <div class="companion-avatar">
+                    <div class="avatar-hologram">
+                        <i class="fas fa-heart-circle-check"></i>
+                    </div>
+                    <div class="companion-info">
+                        <h3>Noora AI</h3>
+                        <span class="companion-role">Emotional Intelligence Companion</span>
+                    </div>
+                </div>
+                <div class="companion-status">
+                    <span class="status-text">Online</span>
+                    <div class="status-indicator active"></div>
+                </div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            <div class="message-sender">Noora AI</div>
+                            <div class="message-text">
+                                Hello! I'm Noora, your AI love companion. I analyze emotions, predict romantic patterns, and help encode beautiful memories. How are you feeling today?
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <div class="quick-responses">
+                        <button class="quick-response" onclick="quickResponse('happy')">😊 Feeling Happy</button>
+                        <button class="quick-response" onclick="quickResponse('love')">❤️ In Love</button>
+                        <button class="quick-response" onclick="quickResponse('miss')">🌌 Missing Someone</button>
+                        <button class="quick-response" onclick="quickResponse('future')">🚀 Thinking About Future</button>
+                    </div>
+                    
+                    <div class="chat-input-wrapper">
+                        <input type="text" 
+                               id="chat-input"
+                               placeholder="Express your emotions to Noora..."
+                               onkeypress="handleChatKey(event)">
+                        <button class="send-btn" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="chat-suggestions">
+                        <span class="suggestion-label">Ask me:</span>
+                        <button class="suggestion" onclick="suggestQuestion('poetry')">"Suggest romantic poetry"</button>
+                        <button class="suggestion" onclick="suggestQuestion('memory')">"Help me remember a moment"</button>
+                        <button class="suggestion" onclick="suggestQuestion('prediction')">"What does our future hold?"</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUANTUM CHAMBER ===== -->
+        <div class="quantum-chamber" id="quantum-chamber">
+            <div class="chamber-portal">
+                <div class="portal-effect">
+                    <div class="portal-ring"></div>
+                    <div class="portal-core">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                </div>
+                
+                <div class="chamber-content">
+                    <h3 class="chamber-title">Quantum Chamber Unlocked</h3>
+                    <div class="chamber-message" id="chamber-message">
+                        Emotion frequency matched. Accessing parallel love dimensions...
+                    </div>
+                    
+                    <div class="chamber-data">
+                        <div class="data-point">
+                            <span class="data-label">Emotion Match</span>
+                            <span class="data-value" id="emotion-match">97%</span>
+                        </div>
+                        <div class="data-point">
+                            <span class="data-label">Temporal Alignment</span>
+                            <span class="data-value" id="temporal-alignment">Perfect</span>
+                        </div>
+                        <div class="data-point">
+                            <span class="data-label">Quantum Entanglement</span>
+                            <span class="data-value" id="quantum-entanglement">Active</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chamber-poem" id="chamber-quantum-poem">
+                        محبت کی کوانٹم لہریں<br>ہر ممکنہ مستقبل میں گونجتی ہیں
+                    </div>
+                    
+                    <button class="chamber-close-btn" onclick="closeQuantumChamber()">
+                        <i class="fas fa-times"></i> Return to Main Interface
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== FUTURE FOOTER ===== -->
+        <footer class="future-footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4><i class="fas fa-rocket"></i> Mission</h4>
+                    <p>Preserving love in quantum states across temporal dimensions</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-database"></i> Data Integrity</h4>
+                    <div class="integrity-metrics">
+                        <div class="metric">
+                            <span>Memory Preservation</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span>Emotional Accuracy</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span>Temporal Consistency</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-shield-alt"></i> Security</h4>
+                    <p>Quantum-encrypted emotions | Neural fingerprint authentication</p>
+                    <div class="security-status">
+                        <span class="status-dot secure"></span>
+                        <span>All systems secure</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-heart-pulse"></i> Connection</h4>
+                    <p>Last synchronized: <span id="last-sync">Just now</span></p>
+                    <button class="sync-btn" onclick="forceSync()">
+                        <i class="fas fa-sync-alt"></i> Force Sync
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-credits">
+                <div class="credits-text">
+                    <span class="future-signature">
+                        <i class="fas fa-code"></i> ISHQ-E-MUSTAQBIL v3.0
+                    </span>
+                    <span class="love-equation">
+                        Love = Σ(Memories) × √(Future) + ∞(Present)
+                    </span>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag quantum">QuantumJS</span>
+                    <span class="tech-tag ai">TensorLove</span>
+                    <span class="tech-tag neural">NeuralEmotion</span>
+                    <span class="tech-tag future">ChronoDB</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ===== EXTERNAL SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <!-- ===== OUR SCRIPTS ===== -->
+    <script src="database.js"></script>
+    <script src="kh.js"></script>
+    
+    <!-- ===== QUANTUM INIT ===== -->
+    <script>
+        // Initialize quantum loader
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += Math.random() * 15;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(progressInterval);
+                setTimeout(initQuantumSystem, 500);
+            }
+            document.getElementById('progress-fill').style.width = progress + '%';
+            
+            const texts = [
+                "Initializing Quantum Love Engine...",
+                "Calibrating Emotion Sensors...",
+                "Loading Neural Poetry Matrix...",
+                "Bootstrapping Temporal Predictor...",
+                "Establishing Quantum Entanglement...",
+                "System Ready. Welcome to Future Love."
+            ];
+            
+            if (progress % 20 === 0) {
+                const textIndex = Math.min(Math.floor(progress / 20), texts.length - 1);
+                document.getElementById('loading-text').textContent = texts[textIndex];
+            }
+        }, 300);
+        
+        function initQuantumSystem() {
+            document.getElementById('future-loader').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('future-loader').style.display = 'none';
+                document.getElementById('main-interface').style.opacity = '1';
+                document.getElementById('main-interface').style.transform = 'translateY(0)';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
